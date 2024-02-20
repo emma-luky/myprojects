@@ -1,0 +1,12 @@
+{% include "header.html" with title=assignment.title %}
+    <div class="currentCavemen">
+        <h2>Current Cavemen</h2>
+        {% if empty %}
+        <p>No current cavemen.</p>
+        {% else %}
+        {% for caveman in cavemen %}
+        <p>{{ caveman.name }} is a {{ caveman.type.name }} caveman.</p>
+        {% endfor %}
+        {% endif %}
+    </div>
+</body>
