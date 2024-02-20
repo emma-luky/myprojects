@@ -1,0 +1,8 @@
+{% include "header.html" with title=assignment.title %}
+    <div class="currentCavemen">
+        <h2>Current Cavemen</h2>
+        {% for caveman in cavemen %}
+        <p>{{ caveman.name }} is a {{ caveman.type }} caveman.</p>
+        {% endfor %}
+    </div>
+</body>

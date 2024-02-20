@@ -1,0 +1,16 @@
+{% include "header.html" with title=assignment.title %}
+    <div>
+        <h2>What caveman are you?</h2>
+        <form action="/" method="post">
+            {% csrf_token %}
+            <label for="name">Name:</label>
+            <input name="name" type="text">
+            <button type="submit">Lets See</button>
+            {% if valid_name %}
+            <output id="cavemanType">{{ response }}</output>
+            {% else %}
+            <output id="error">{{ response }}</output>
+            {% endif %}
+        </form>
+    </div>
+</body>
