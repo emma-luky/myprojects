@@ -10,3 +10,4 @@ Welcome to my personal code projects repository! Here, you'll find a collection 
 
 ## Project 1: CavemanParty
 <a name="project-1"></a>
+Description: Django Project for me and my friends. My friend wanted to host a party and have a unique RSVP website.
