@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FramesBar</class>
+ <widget class="QWidget" name="FramesBar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>707</width>
+    <height>158</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="AddFrameButton">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>10</y>
+     <width>80</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add New</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="DeleteFrameButton">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>50</y>
+     <width>80</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>591</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>589</width>
+      <height>99</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="buttonHolder" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>591</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>591</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout"/>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

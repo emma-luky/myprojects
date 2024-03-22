@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1022</width>
+    <height>683</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1022</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#toolBar {
+	background-color:rgb(205, 255, 223);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="Canvas" name="canvas" native="true">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>10</y>
+      <width>531</width>
+      <height>461</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="animationpreview" name="animation" native="true">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>10</y>
+      <width>351</width>
+      <height>201</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="Toolbar" name="toolBar" native="true">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>230</y>
+      <width>351</width>
+      <height>241</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="FramesBar" name="frames" native="true">
+    <property name="geometry">
+     <rect>
+      <x>51</x>
+      <y>470</y>
+      <width>901</width>
+      <height>111</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="StartScreen" name="startscreen" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>0</y>
+      <width>931</width>
+      <height>541</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1022</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionSave"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Toolbar</class>
+   <extends>QWidget</extends>
+   <header location="global">toolbar.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>StartScreen</class>
+   <extends>QWidget</extends>
+   <header location="global">startscreen.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Canvas</class>
+   <extends>QWidget</extends>
+   <header location="global">canvas.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>animationpreview</class>
+   <extends>QWidget</extends>
+   <header location="global">animationpreview.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FramesBar</class>
+   <extends>QWidget</extends>
+   <header location="global">framesbar.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
