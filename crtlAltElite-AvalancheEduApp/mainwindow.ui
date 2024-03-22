@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>828</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Palatino Linotype</family>
+    <pointsize>15</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton {
+	background-color: #abc4ff;
+	border-radius: 15px;
+}
+QPushButton:disabled{
+	background-color: #d7e3fc;
+}
+QPushButton:hover{
+	background-color: #8699c2;
+}
+
+li {
+	margin-bottom: 20px;
+}
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="font">
+    <font>
+     <family>Monday Sans</family>
+    </font>
+   </property>
+   <widget class="QStackedWidget" name="pages">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1280</width>
+      <height>720</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <widget class="StartScreen" name="startScreen"/>
+    <widget class="QuizScreen2" name="quizScreen2"/>
+    <widget class="QuizScreen3" name="quizScreen3"/>
+    <widget class="ModulesView" name="modules"/>
+    <widget class="LearningScreen1" name="learningScreen1">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QuizScreen1" name="quizScreen1"/>
+    <widget class="LearningScreen2" name="learningScreen2"/>
+    <widget class="LearningScreen3" name="learningScreen3"/>
+    <widget class="EndScreen" name="endScreen"/>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuKnow_before_You_Go">
+    <property name="title">
+     <string>Know before You Go</string>
+    </property>
+   </widget>
+   <addaction name="menuKnow_before_You_Go"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>StartScreen</class>
+   <extends>QWidget</extends>
+   <header location="global">startscreen.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ModulesView</class>
+   <extends>QWidget</extends>
+   <header location="global">modulesview.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>LearningScreen1</class>
+   <extends>QWidget</extends>
+   <header location="global">learningscreen1.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QuizScreen1</class>
+   <extends>QWidget</extends>
+   <header location="global">quizscreen1.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>EndScreen</class>
+   <extends>QWidget</extends>
+   <header location="global">endscreen.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>LearningScreen2</class>
+   <extends>QWidget</extends>
+   <header location="global">learningscreen2.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>LearningScreen3</class>
+   <extends>QWidget</extends>
+   <header location="global">learningscreen3.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QuizScreen2</class>
+   <extends>QWidget</extends>
+   <header location="global">quizscreen2.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QuizScreen3</class>
+   <extends>QWidget</extends>
+   <header location="global">quizscreen3.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

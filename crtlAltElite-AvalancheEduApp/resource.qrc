@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>heavySnow.jpeg</file>
+        <file>bkg.png</file>
+        <file>humanActivity.jpg</file>
+        <file>steepSlope.jpg</file>
+        <file>tempuratureChange.jpg</file>
+        <file>avoidSnowStorms.jpeg</file>
+        <file>avoidSteepSlopes.jpeg</file>
+        <file>forecast.jpeg</file>
+        <file>snowpits.jpeg</file>
+        <file>mountain.png</file>
+    </qresource>
+</RCC>
