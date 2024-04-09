@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+{% include "header.html" with title="Login" %}
+    <main>
+        <h1>Login</h1>
+        <form action="/profile/login/" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="next" value="{{ next_url }}">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" autofocus>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            {% if error %}
+            <output>{{ error }}</output>
+            {% endif %}
+            <div class="submitButton">
+                <button type="submit">Log in</button>
+            </div>
+        </form>
+    </main>
+</body>

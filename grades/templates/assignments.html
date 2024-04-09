@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% include "header.html" with title="Assignments" %}
+    <main>
+        <h1>All assignments</h1>
+        <table id="assignmentsTable">
+            <thead>
+                <tr>
+                    <th scope="row">Assignment</th>
+                    <th class="sortable" scope="row">Due date</th>
+                    <th class="sortable" scope="row">Weight</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for assignment in assignments %}
+                <tr data-index="{{ forloop.counter }}">
+                    <td><a href="/{{ assignment.id }}/">{{ assignment.title }}</a></td>
+                    <!-- data-timestamp= -->
+                    <td data-value="{{ assignment.deadline|date:'U'}}" data-timestamp="{{ assignment.deadline }}">{{ assignment.deadline }}</td>
+                    <td>{{ assignment.weight }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </main>
+</body>

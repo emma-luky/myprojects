@@ -1,0 +1,181 @@
+/* phase 2 */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,300&display=swap');
+
+/* phase 2: navigation bar */
+/* phase 3: nav background and box shadow */
+/* phase 5: nav banner layout */
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+    box-shadow: 0px 0px 5px gray;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+}
+/* phase 2: navigation bar */
+/* phase 3: "CS 3550" black and bolded */
+header #title{
+    font-weight: bold;
+    color: black;
+}
+/* phase 5: nav banner layout */
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50rem;
+    margin: auto;
+}
+nav menu{
+    display: flex;
+    flex-direction: row;
+}
+nav menu li{
+    list-style: none;
+    font-size: 125%;
+    margin-right: 1rem;
+}
+/* phase 3: "Assignments" and "Profile" gray */
+nav a{
+    color: gray;
+}
+
+
+/* phase 4: no underline when not hovering */
+a{
+    text-decoration: none;
+}
+/* phase 4: underline while hovering */
+a:hover{
+    text-decoration: underline;
+}
+/* phase 4: black while being clicked on */
+a:active{
+    color: black;
+}
+
+
+/* phase 3: 3rem whitespace between page title and nav bar */
+/* phase 5: max width (50rem) */
+main{
+    margin-top: 3rem;
+    max-width: 50rem;
+    margin: auto;
+    padding: 0;
+}
+/* phase 2: font and line height*/
+body{
+    color: black;
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 125%;
+}
+/* phase 2: page title size */
+/* phase 3: horizontal line between title and subtitle */
+body h1{
+    font-size: 150%;
+    border-bottom: 1px solid gray;
+}
+/* phase 2: "Description" header */
+/* phase 3: 1rem of whitespace between heading and subtitle */
+body section h2{
+    font-size: medium;
+    margin: 1rem;
+}
+
+
+/* phase 2: line height */
+/* phase 4: table spans whole width of main content */
+table{
+    line-height: 150%;
+    width: 100%;
+}
+/* phase 4: make table columns that contian numbers right aligned */
+.numerical{
+    text-align: center;
+}
+.sortable{
+    text-align: center;
+}
+/* phase 3: 1rem of white space between paragraphs and list items and tables*/
+p, table{
+    margin: 1rem;
+}
+table tfoot tr td{
+    font-weight: bold;
+}
+
+
+/* phase 2: font*/
+code{
+    font-family:'IBM Plex Mono', Courier, monospace;
+}
+
+
+/* phase 3: action block */
+.actionBlock{
+    border : 2px solid #204a87;
+    display: flex;
+    flex-direction: column;
+    background-color: #b1c3de;
+    padding:1rem;
+    margin: 1rem;
+}
+.actionBlock div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* end of phase 3: action block */
+
+
+/* phase 4: login form */
+form{
+    display: flex;
+    flex-direction: column;
+}
+form div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+.submitButton{
+    display: flex;
+    justify-content: center;
+}
+/* end of phase 4: login form */
+
+/* phase 4: submission form */
+form div .submissionButtons{
+    display: flex;
+    flex-direction: row;
+}
+/* phase 2: login form size 25% larger */
+form label {
+    font-size: 125%;
+}
+/* phase 2: login form size 25% larger */
+form input {
+    font-size: 125%;
+    width: 50%;
+}
+/* phase 2: login form size 25% larger */
+/* phase 4: submissionButtons 1rem apart*/
+form button {
+    font-size: 125%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 50%;
+}
+form output{
+    color: red;
+}
+
+/* Homework 6 */
+th.sortable { cursor: pointer; }
+th.sort-asc::after { content: " \25b2"; }
+th.sort-desc::after { content: " \25bc"; }

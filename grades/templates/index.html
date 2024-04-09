@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% include "header.html" with title=assignment.title %}
+    <main>
+        <h1>{{ assignment.title }}</h1>
+        <p>Due {{ assignment.deadline }}, total of {{ assignment.points }} {{ assignment.points|pluralize:"point,points" }}</p>
+        {% if is_student %}
+        <section class="actionBlock">
+            {% if not is_due %}
+            <!-- <p><a href="{{ submission.file.url }}">{{submission_status}}</a></p> -->
+            <form id="submissionForm" method="post" enctype="multipart/form-data" action="/{{ assignment.id }}/submit/">
+                {% csrf_token %}
+                <input type="file" name="file" required>
+                <button type="submit">Submit</button>  
+            </form>
+            {% else %}
+            {% if submission.file %}
+            <p><a href="{{ submission.file.url }}">{{submission_status}}</a></p>
+            {% endif %}
+            {% endif %}
+        </section>
+        {% else %}
+        <section class="actionBlock">
+            <p>Currently {{ total_submissions }}/{{total_students}} {{ total_students|pluralize:"submission,submissions" }}</p>
+            <div>
+                <p>{{ assigned_submissions }} {{ assigned_submissions|pluralize:"submission,submissions" }} assigned to you</p>
+                <p><a href="submissions/">Grade</a></p>
+            </div>
+        </section>
+        {% endif %}
+        <section>
+            <h2>Description</h2>
+            <p>{{ assignment.description|safe}}</p>
+        </section>
+    </main>
+</body>
