@@ -9,13 +9,14 @@ Welcome to my personal code projects repository! Here, you'll find a collection 
 7. [Project 5: Simon Game](#project-5)
 
 ## My Website
-<a href="https://emmahluk.wixsite.com/emmaluk" target="_blank" rel="noopener noreferrer">Click here!</a>
+<a name="my-website">Click here!</a>
+[Click here!](https://emmahluk.wixsite.com/emmaluk)
 
 ## Project 1: CavemanParty
 <a name="project-1"></a>
 Description: A Django Project made for me and my friends. My friend wanted to host a party and have a unique RSVP website. This website consisted of a form that allowed users to register for a specific caveman. The caveman type was taken from a database that I created. The database only allowed for one type of caveman, so each individual was unique. Then the website showed the results of the form: the individual's name and their caveman. I deployed the application through AWS using an EC2 instance.
 
-## Project w: Grading Web Application
+## Project 2: Grading Web Application
 <a name="project-2"></a>
 Description: A Django Project made for my Web Development I class. Allow users (Professors, TAs, and Students) to submit assignments or grades. There is a database that holds the different types of users and the assignments submitted. As well as student users' grades.
 
