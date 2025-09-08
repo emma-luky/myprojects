@@ -9,7 +9,7 @@ Welcome to my personal code projects repository! Here, you'll find a collection 
 7. [Project 5: Simon Game](#project-5)
 
 ## My Website
-<a name="my-website">Click here!</a>
+<a name="my-website"></a>
 [Click here!](https://emmahluk.wixsite.com/emmaluk)
 
 ## Project 1: CavemanParty
